@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Sharrre Plugin
+   ========================================================================== */
+.sharrre {
+	display:block;
+	float:right;
+	position:relative;
+	margin:(@gap / 2) 0 0;
+	.box {
+		display:inline-block;
+		float:left;
+		background:@bluegrey;
+		height:25px;
+		line-height:25px;
+		//padding:0px 40px 0 8px;
+		padding:0px 10px 0 8px;
+		clear:both;
+		overflow:hidden;
+		font-size:12px;
+		.transition(all 0.2s ease-in-out);
+		&:hover {
+			.middle {width:100px;} // 25 * number of icons
+			//padding-right:140px; // 100 + 40
+			padding-right:110px;
+		}
+	}
+	.left {
+	    display:block;
+	    white-space:nowrap;
+	    text-transform:lowercase;
+	    color:@white;
+	    .transition(all 0.2s ease-in-out);
+	    i {padding-right:5px; line-height:25px; }
+	    .share {vertical-align:top; }
+	}
+	.middle {
+	    position:absolute;
+	    height:25px;
+	    top:0px;
+	    //right:30px;
+	    right:0;
+	    width:0px;
+	    background:@white;
+	    color:@grey;
+	    white-space:nowrap;
+	    text-align:left;
+	    overflow:hidden;
+	    .transition(width 0.2s ease-in-out);
+	    a {
+	    	color:@grey;
+		   padding:0 5px;
+		   text-align:center;
+		   float:left;
+		   width:25px;
+		   line-height:25px;
+		   &:hover,
+		   &:focus {
+		   	background:@white;
+		   	color:@bluegrey;
+		   	text-decoration:none;
+		   }
+	    }
+	}
+	.right {
+  	display:none;
+		position:absolute;
+		right:0px;
+		top:0px;
+		height:100%;
+		width:30px;
+		text-align:center;
+		line-height:25px;
+		color:@white;
+	   background:@grey;
+	}
+}

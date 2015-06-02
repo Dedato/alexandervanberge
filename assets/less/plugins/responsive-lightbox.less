@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Responsive Lightbox Plugin
+   ========================================================================== */
+
+/* Swipebox */   
+#swipebox-overlay {
+	background:rgba(255, 255, 255, 0.9);
+	.slide {background-color:rgba(255, 255, 255, 0); }
+	#swipebox-action, 
+	#swipebox-caption {
+		background-color:@white;
+		background-image:none;
+		opacity:0.95;
+		text-shadow:1px 1px 1px @white;
+	}
+	#swipebox-caption {
+		border-bottom:1px solid rgba(0, 0, 0, 0.2);
+		color:@bluegrey !important;
+		font-size:14px;
+		line-height:43px;
+		.helvetica-neue-light();
+	}
+	#swipebox-action {
+		border-top:1px solid rgba(0, 0, 0, 0.2);
+		#swipebox-prev,
+		#swipebox-next,
+		#swipebox-close {
+			background:none;
+			color:@bluegrey;
+			font-size:40px;
+			font-family:'icomoon';
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height:50px;
+			/* Better Font Rendering =========== */
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			&:hover,
+			&:focus {
+				color:@black;
+			}
+			&:before {
+				line-height:1;
+			}
+		}
+		#swipebox-next:before {content:'\e603'; }
+		#swipebox-prev:before {content:'\e600'; }
+		#swipebox-close:before {content:'\e612'; }
+	}
+}

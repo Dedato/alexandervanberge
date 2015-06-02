@@ -1,0 +1,95 @@
+.gform_wrapper ul {
+  .list-unstyled();
+}
+.gform_wrapper li {
+  .form-group();
+}
+.gform_wrapper form {
+  margin-bottom: 0;
+}
+.gform_wrapper .gfield_required {
+  padding-left: 1px;
+  color: @state-danger-text;
+}
+.ginput_container input,
+.ginput_container select,
+.ginput_container textarea {
+  .form-control();
+}
+.ginput_container textarea {
+  height: auto;
+}
+.gform_wrapper .gfield_error {
+  .gfield_label {
+    color: @state-danger-text;
+  }
+  input,
+  select,
+  textarea {
+    border-color: @alert-danger-border;
+    background-color: @alert-danger-bg;
+    color: @alert-danger-text;
+    .form-control-focus(@alert-danger-text);
+  }
+}
+.validation_error {
+  .alert();
+  .alert-danger();
+}
+#gforms_confirmation_message {
+  .alert();
+  .alert-success();
+}
+
+
+.gform_wrapper {
+	.gfield {
+		label {font-weight:400; }
+		&.captcha {
+			// Captcha
+			.gfield_label {display:block; }
+			.gfield_captcha_container {
+				display:inline;
+				.gfield_captcha,
+				.gfield_captcha_input_container {
+					display:inline;
+					float:left;
+				}
+				.gfield_captcha_input_container {
+					margin:0 5px;
+					input {
+						.form-control();
+						width:70px;
+						height:29px;
+					}
+				}
+			}
+			&.gfield_error {
+			  .validation_message {display:inline; }
+			}
+		}
+	}
+	.gform_footer {
+		.gform_button {
+			float:right;
+			margin-top:25px;
+			.btn-primary();
+			.btn();
+			.btn-sm();
+		}
+	}
+	.gfield_error {
+		.gfield_label,
+		.validation_message {
+			color:@state-danger-text;
+		}
+		input,
+		select,
+		textarea {
+			border-color: @alert-danger-border;
+			background-color: @alert-danger-bg;
+			color: @alert-danger-text;
+			.form-control-focus(@alert-danger-text);
+		}
+	}
+}
