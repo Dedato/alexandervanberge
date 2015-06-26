@@ -116,12 +116,12 @@ module.exports = function(grunt) {
     ftpush: {
       build: {
         auth: {
-          host:'ftp.alexandervanberge.nl',
+          host:'178.18.89.88',
           port:21,
           authKey:'deploy'
         },
         src: '',
-        dest: '/wwwroot/wp-content/themes/alexandervanberge',
+        dest: '/domains/www2.alexandervanberge.nl/public_html/wp-content/themes/alexandervanberge',
         exclusions: [
           '**/.DS_Store',
           '**/Thumbs.db',
