@@ -121,7 +121,7 @@ module.exports = function(grunt) {
           authKey:'deploy'
         },
         src: '',
-        dest: '/domains/www2.alexandervanberge.nl/public_html/wp-content/themes/alexandervanberge',
+        dest: '/domains/alexandervanberge.nl/public_html/wp-content/themes/alexandervanberge',
         exclusions: [
           '**/.DS_Store',
           '**/Thumbs.db',
