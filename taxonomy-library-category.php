@@ -1,7 +1,7 @@
 <?php
 // Get taxonomy term
 $terms = get_the_terms($post->ID, 'library-category');
-$term = array_pop($terms);
+$term  = array_pop($terms);
 if (term_description()): ?>
   <div class="row">
     <div class="page col-xs-10 col-xs-offset-1">

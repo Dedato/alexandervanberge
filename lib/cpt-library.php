@@ -159,7 +159,6 @@ if ( !is_admin() ) add_filter('pre_get_posts', 'library_posts_per_page');
    ========================================================================== */
 
 function library_slider() { ?>
-
   <article <?php post_class('col-xs-12'); ?>>
 		<?php if( have_rows('portfolio_image') ) : ?>
 			<div id="slider" class="flexslider">

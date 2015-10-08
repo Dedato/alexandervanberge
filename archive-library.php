@@ -13,9 +13,9 @@
 // Get library items
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $wp_query = new WP_Query( array(	
-	'post_type' 					=> 'library',
+	'post_type' 					    => 'library',
 	'posts_per_archive_page'	=> 8, // should be the same in library_posts_per_page() in: lib/cpt-houses.php
-	'paged' 							=> $paged
+	'paged' 							    => $paged
 )); ?>
 	
 <div id="library" class="grid row">
