@@ -6932,6 +6932,37 @@ var Roots = {
         // Move #infscr-loading to parent in order to keep grid intact
         $('.grid').find('#infscr-loading').insertAfter($('.grid'));
         picturefill();
+        // Re-add hover effect
+        if ($('body').hasClass('post-type-archive-publication')) {
+          // View publication effect
+          if (Modernizr.touch) {
+            // show the close overlay button
+            $('.close-overlay').removeClass('hidden');
+            // handle the adding of hover class when clicked
+            $('.effect').click(function(e){
+              if (!$(this).hasClass('hover')) {
+                $(this).addClass('hover');
+              }
+            });
+            // handle the closing of the overlay
+            $('.close-overlay').click(function(e){
+              e.preventDefault();
+              e.stopPropagation();
+              if ($(this).closest('.effect').hasClass('hover')) {
+                $(this).closest('.effect').removeClass('hover');
+              }
+            });
+          } else {
+            // handle the mouseenter functionality
+            $('.effect').mouseenter(function(){
+              $(this).addClass('hover');
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+              $(this).removeClass('hover');
+            });
+          }
+        }
       });
     }
   },
