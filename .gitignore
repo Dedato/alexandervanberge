@@ -1,7 +1,11 @@
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 node_modules
-assets/css/main.min.css.map
+assets/css/
+assets/js/scripts.js
+assets/js/scripts.min.js
+assets/js/scripts.min.js.map
+assets/js/vendor
 .ftppass
 .grunt
 .ftppass
