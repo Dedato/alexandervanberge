@@ -9,3 +9,9 @@ assets/js/vendor
 .ftppass
 .grunt
 .ftppass
+
+assets/manifest.json
+
+assets/js/scripts.min.js
+
+assets/js/scripts.js
